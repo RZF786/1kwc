@@ -47,21 +47,21 @@
         }
       },
       methods: {
-        saveEmployee () {
-          db.collection('employees').add({
-            employee_id: this.employee_id,
-            name: this.name,
-            dept: this.dept,
-            position: this.position
-          })
-          .then(docRef => {
-            console.log('Client added: ', docRef.id)
-            this.$router.push('/')
-          })
-          .catch(error => {
-            console.error('Error adding employee: ', error)
-          })
-        }
+        // saveEmployee () {
+        //   db.collection('employees').add({
+        //     employee_id: this.employee_id,
+        //     name: this.name,
+        //     dept: this.dept,
+        //     position: this.position
+        //   })
+        //   .then(docRef => {
+        //     console.log('Client added: ', docRef.id)
+        //     this.$router.push('/')
+        //   })
+        //   .catch(error => {
+        //     console.error('Error adding employee: ', error)
+        //   })
+        // }
       }
     }
 </script>

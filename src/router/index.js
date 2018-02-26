@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import ViewEmployee from '@/components/ViewEmployee'
+import ViewInvestor from '@/components/ViewInvestor'
 import NewEmployee from '@/components/NewEmployee'
 import EditEmployee from '@/components/EditEmployee'
 
@@ -20,9 +20,9 @@ export default new Router({
       component: NewEmployee
     },
     {
-      path: '/:employee_id',
-      name: 'view-employee',
-      component: ViewEmployee
+      path: '/:investorID',
+      name: 'view-investor',
+      component: ViewInvestor
     },
     {
       path: '/edit/:employee_id',
